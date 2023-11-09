@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class pembayaran extends Model
 {
     use HasFactory;
+    protected $table="pembayaran";
+
+    protected $primaryKey="id_pembayaran";
+    public $incrementing="false";
+    protected $guarded=[];
 }
