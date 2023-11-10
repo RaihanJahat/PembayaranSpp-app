@@ -32,10 +32,10 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <img src="bk.png" alt="" width="50px">
                 </div>
-                <div class="sidebar-brand-text mx-3">Siswa<sup></sup></div>
+                <div class="sidebar-brand-text mx-3">BinaKerja<sup></sup></div>
             </a>
 
             <!-- Divider -->
