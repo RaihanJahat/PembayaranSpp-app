@@ -43,13 +43,13 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                            <input type="text" class="form-control form-control-user"
+                                                id="exampleInputEmail" name="username"
                                                 placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="exampleInputPassword" name="password" placeholder="Password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -58,9 +58,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="/" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                       <button class="btn btn-primary btn-user btn-block">Login</button>
                                         <hr>
                                         <a href="https://accounts.google.com/v3/signin/identifier?hl=in&ifkv=AVQVeyxLPz2lprehTECOXN0ZcyvM92Gxx8qxF7NDw31fSz6htwZFaOaUiQQWIQUEY4ZzxU3WxtUuhQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1291803435%3A1700280665728697&theme=glif" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google

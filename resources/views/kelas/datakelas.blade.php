@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Siswa</title>
+    <title>Data Kelas</title>
 
     <!-- Custom fonts for this template-->
     <link href="/asset/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -80,7 +80,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Begitulah
+                Addons
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -112,7 +112,7 @@
                     <i class="bi bi-calendar2-heart-fill"></i>
                     <span>History</span></a>
             </li>
-            <div class="sidebar-heading">
+             <div class="sidebar-heading">
                 Sosmed
             </div>
             <li class="nav-item">
@@ -125,6 +125,7 @@
                     <i class="bi bi-whatsapp"></i>
                     <span>WhatsApp</span></a>
             </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -201,28 +202,24 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTable Siswa</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">DataTable Kelas</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Nisn</th>
-                                            <th>Nis</th>
-                                            <th>Nama Siswa</th>
-                                            <th>Alamat</th>
-                                            <th>No Telepon</th>
+                                            <th>Id</th>
+                                            <th>Nama Kelas</th>
+                                            <th>Kompetensi Keahlian</th>
                                         </tr>
                                     </thead>
                                  
                                     <tbody>
                                         <tr>
-                                            <td>212207008</td>
-                                            <td>121141</td>
-                                            <td>Brody</td>
-                                            <td>Ciwareng</td>
-                                            <td>0888</td>
+                                            <td>2</td>
+                                            <td>XII</td>
+                                            <td>Rekayasa Perangkat Lunak</td>
                                         </tr>
                                         
                                     </tbody>
