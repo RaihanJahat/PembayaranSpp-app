@@ -29,8 +29,14 @@ return view('siswa.register');
         Route::get('index',[SiswaController::class,'index']);
         Route::get('regis',[SiswaController::class,'register']);
         Route::post('Simpan',[SiswaController::class,'simpan']);
+        route::get('siswa',[SiswaController::class,'siswa']);
+Route::get('tambahsiswa',[SiswaController::class,'tambahs']);
+Route::post('tambahsiswa',[SiswaController::class,'tambahsiswa']);
+Route::get('editsiswa/{id}',[SiswaController::class,'edits']);
+Route::post('editsiswa/{id}',[SiswaController::class,'editsiswa']);
+Route::get('hapussiswa/{id}',[SiswaController::class,'hapussiswa']);
 
-        //petugas
+        //crud
 Route::get('datapetugas', function(){
 return view('petugas.datapetugas');
     });
@@ -50,4 +56,10 @@ return view('spp.dataspp');
         //logout
         Route::get('logout',[AdminController::class,'logout']);
         Route::get('loginpetugas',[AdminController::class,'loginpetugas']);
-        Route::post('loginpetugas',[AdminController::class,'ceklogin']);
+        Route::post('loginpetugas',[AdminController::class,'cekpetugas']);
+        Route::get('loginsiswa',[SiswaController::class,'loginsiswa']);
+        Route::post('loginsiswa',[SiswaController::class,'ceksiswa']);
+
+
+        //button
+        Route::get('tambah',[SiswaController::class,'tambah']);

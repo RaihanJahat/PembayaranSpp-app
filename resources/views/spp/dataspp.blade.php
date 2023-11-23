@@ -34,9 +34,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                 <div class="sidebar-brand-icon">
-                    <i class="bi bi-playstation"></i>
+                    <i class="bi bi-currency-exchange"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Warnet<sup></sup></div>
+                <div class="sidebar-brand-text mx-3">Pembayaran Spp<sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -171,7 +171,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">RAIHAN</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                 <img class="img-profile rounded-circle"
                                     src="asset\img\PXL_20230817_112913316.PORTRAIT.jpg">
                             </a>
@@ -200,12 +200,10 @@
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTable Spp</h6>
-                        </div>
+                        
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-bordered" id="" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Id</th>
@@ -223,6 +221,9 @@
                                         
                                     </tbody>
                                 </table>
+                                <button href="" type="submit" class="btn btn-primary btn-user">Tambah</button>
+                                <button href="" type="submit" class="btn btn-success" >Edit</button>
+                                <button href="" type="submit" class="btn btn-danger">Hapus</button>
                             </div>
                         </div>
                     </div>
@@ -235,12 +236,7 @@
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
+            
             <!-- End of Footer -->
 
         </div>

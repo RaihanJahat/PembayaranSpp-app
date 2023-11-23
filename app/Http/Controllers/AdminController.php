@@ -15,7 +15,7 @@ class AdminController extends Controller
     {
         return view("petugas.loginpetugas");
     }
-    public function ceklogin(Request $request)
+    public function cekpetugas(Request $request)
     {
         $cek = new petugas();
         $cek = $cek->where('username', $request->input('username'))->where('password', $request->input('password'));
@@ -24,7 +24,7 @@ class AdminController extends Controller
                 'username' => $request->input('username'),
                 'password' => ($request->input('password'))
             ]);
-            return redirect('utama');
+            return redirect('index');
         }
     }
 }

@@ -34,9 +34,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                 <div class="sidebar-brand-icon">
-                    <i class="bi bi-playstation"></i>
+                    <i class="bi bi-currency-exchange"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Warnet<sup></sup></div>
+                <div class="sidebar-brand-text mx-3">Pembayaran Spp<sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -93,7 +93,8 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="{{url("loginpetugas")}}">Login</a>
+                        <a class="collapse-item" href="{{url("loginsiswa")}}">Login Siswa</a>
+                        <a class="collapse-item" href="{{url("loginpetugas")}}">Login Petugas</a>
                         <a class="collapse-item" href="{{url("regis")}}">Register</a>
                     </div>
                 </div>
@@ -173,7 +174,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">RAIHAN</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
                                 <img class="img-profile rounded-circle"
                                     src="asset\img\PXL_20230817_112913316.PORTRAIT.jpg">
                             </a>

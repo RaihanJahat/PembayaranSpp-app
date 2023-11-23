@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Login Siswa</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,33 +24,31 @@
 
 <body class="bg-gradient-primary">
 
+
     <div class="container">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
-            <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="col-xl-6">
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card o-hidden border-0 shadow-lg my-4">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-                            <div class="col-lg-6">
+
+                            <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Siswa</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" action="{{url('loginsiswa')}}" method="POST">
+                                        @csrf
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                            <input type="nisn" class="form-control form-control-user"
+                                                id="nisn" aria-describedby="emailHelp" placeholder="Nisn" name="nisn">
                                         </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
+
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
@@ -58,22 +56,13 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="/" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
                                         <hr>
-                                        <a href="https://accounts.google.com/v3/signin/identifier?hl=in&ifkv=AVQVeyxLPz2lprehTECOXN0ZcyvM92Gxx8qxF7NDw31fSz6htwZFaOaUiQQWIQUEY4ZzxU3WxtUuhQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1291803435%3A1700280665728697&theme=glif" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
-                                        </a>
-                                        <a href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                        </a>
+
                                     </form>
                                     <hr>
-                                    
-                                    <div class="text-center">
-                                        <a class="small" href="regis">Create an Account!</a>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
