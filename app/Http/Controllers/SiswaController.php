@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\kelas;
 use App\Models\siswa;
+use App\Models\spp;
 use Illuminate\Http\Request;
 
 class SiswaController extends Controller
@@ -90,5 +92,9 @@ class SiswaController extends Controller
     public function hapussiswa($id){
         $e = siswa::where('nisn',$id)->delete();
         return back();
+    }
+    public function datasiswa(){
+        $oh = new siswa();
+        return view('siswa.datasiswa',['asep1'=>$oh->all()]);
     }
 }

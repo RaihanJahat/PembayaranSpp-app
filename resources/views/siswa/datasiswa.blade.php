@@ -93,7 +93,8 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="{{url("login")}}">Login</a>
+                        <a class="collapse-item" href="{{url("loginsiswa")}}">Login Siswa</a>
+                        <a class="collapse-item" href="{{url("loginpetugas")}}">Login Petugas</a>
                         <a class="collapse-item" href="{{url("regis")}}">Register</a>
                     </div>
                 </div>
@@ -213,18 +214,20 @@
                                         </tr>
                                     </thead>
                                  
+
                                     <tbody>
+                                        @foreach ($asep1 as $item)
                                         <tr>
-                                            <td>212207008</td>
-                                            <td>121141</td>
-                                            <td>Brody</td>
-                                            <td>Ciwareng</td>
-                                            <td>0888</td>
+                                            <td>{{$item->nisn}}</td>
+                                            <td>{{$item->nis}}</td>
+                                            <td>{{$item->nama}}</td>
+                                            <td>{{$item->alamat}}</td>
+                                            <td>{{$item->no_telp}}</td>
                                         </tr>
-                                        
+                                        @endforeach
                                     </tbody>
                                 </table>
-                                <button href="{{url('tambah')}}" type="submit" class="btn btn-primary btn-user">Tambah</button>
+                                <button href="{{url('tambahsiswa')}}" type="submit" class="btn btn-primary btn-user">Tambah</button>
                                 <button type="submit" class="btn btn-success">Edit</button>
                                 <button type="submit" class="btn btn-danger">Hapus</button>
                             </div>

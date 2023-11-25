@@ -35,7 +35,7 @@ Route::post('tambahsiswa',[SiswaController::class,'tambahsiswa']);
 Route::get('editsiswa/{id}',[SiswaController::class,'edits']);
 Route::post('editsiswa/{id}',[SiswaController::class,'editsiswa']);
 Route::get('hapussiswa/{id}',[SiswaController::class,'hapussiswa']);
-
+Route::get('datasiswa',[SiswaController::class,'datasiswa']);
         //crud
 Route::get('datapetugas', function(){
 return view('petugas.datapetugas');
@@ -62,4 +62,4 @@ return view('spp.dataspp');
 
 
         //button
-        Route::get('tambah',[SiswaController::class,'tambah']);
+        Route::get('tambahsiswa',[SiswaController::class,'tambahsiswa']);

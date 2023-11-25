@@ -93,7 +93,8 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="{{url("login")}}">Login</a>
+                        <a class="collapse-item" href="{{url("loginsiswa")}}">Login Siswa</a>
+                        <a class="collapse-item" href="{{url("loginpetugas")}}">Login Petugas</a>
                         <a class="collapse-item" href="{{url("regis")}}">Register</a>
                     </div>
                 </div>
@@ -222,7 +223,7 @@
                                         
                                     </tbody>
                                 </table>
-                                <button type="submit" class="btn btn-primary btn-user">Tambah</button>
+                                <button type="submit" class="btn btn-primary btn-user" {{url('tambahsiswa')}}>Tambah</button>
                                 <button type="submit" class="btn btn-success">Edit</button>
                                 <button type="submit" class="btn btn-danger">Hapus</button>
                             </div>
